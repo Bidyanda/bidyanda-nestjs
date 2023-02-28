@@ -13,7 +13,7 @@ export class AppController {
   @Post('/webhook')
   webhook(@Body() body:any) {
     return new Promise<string>((resolve, reject) => {
-        exec('./../gitpull.sh', (error, stdout, stderr) => {
+        exec('sh /var/www/bidyanda/html/bidyanda/gitpull.sh', (error, stdout, stderr) => {
           if (error) {
             reject(error);
           } else {

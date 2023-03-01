@@ -27,7 +27,7 @@ module.exports = {
       repo: "https://github.com/Bidyanda/bidyanda-nestjs.git",
       path: "/var/www/bidyanda/html/bidyanda",
       "post-setup": "npm install",
-      "post-deploy": "pm2 startOrRestart ecosystem.config.js --env development",
+      "post-deploy": "pm2 start ecosystem.config.js --env production",
     },
   },
 };

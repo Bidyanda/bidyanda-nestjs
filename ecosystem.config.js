@@ -21,14 +21,14 @@ module.exports = {
     },
   ],
   deploy: {
-    production: {
-      user: "root",
-      host: ["143.110.240.100"],
-      ref: "origin/master",
-      repo: "https://github.com/Bidyanda/bidyanda-nestjs.git",
-      path: "/var/www/bidyanda/html/bidyanda",
-      "post-setup": "npm install",
-      "post-deploy": "pm2 start ecosystem.config.js --env production",
-    },
+      "production" : {
+        "key"  : "/var/www/sshkey.pem", // path to the public key to authenticate
+        "user" : "root",              // user used to authenticate
+        "host" : "143.110.240.100",      // where to connect
+        "ref"  : "origin/master",
+        "repo" : "https://github.com/Bidyanda/bidyanda-nestjs.git",
+        "path" : "/var/www/bidyanda/html/bidyanda",
+        "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
+      },
   },
 };

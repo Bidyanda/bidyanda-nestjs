@@ -14,10 +14,10 @@ module.exports = {
         NODE_ENV: "staging",
       },
       
-    //   env_production: {
-    //     PORT: 80,
-    //     NODE_ENV: "production",
-    //   },
+      env_production: {
+        PORT: 3000,
+        NODE_ENV: "production",
+      },
     },
   ],
   deploy: {

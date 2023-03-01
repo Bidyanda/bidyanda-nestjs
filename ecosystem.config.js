@@ -7,16 +7,16 @@ module.exports = {
     {
       env: {
         PORT: 3000,
-        NODE_ENV: "development",
+        NODE_ENV: "production",
       },
       env_staging: {
         PORT: 3000,
         NODE_ENV: "staging",
       },
-      env_production: {
-        PORT: 80,
-        NODE_ENV: "production",
-      },
+    //   env_production: {
+    //     PORT: 80,
+    //     NODE_ENV: "production",
+    //   },
     },
   ],
   deploy: {

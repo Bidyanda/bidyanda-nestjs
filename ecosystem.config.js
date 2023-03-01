@@ -26,7 +26,7 @@ module.exports = {
         "user" : "root",              // user used to authenticate
         "host" : "143.110.240.100",      // where to connect
         "ref"  : "origin/master",
-        "repo" : "https://github.com/Bidyanda/bidyanda-nestjs.git",
+        "repo" : "git@github.com:Bidyanda/bidyanda-nestjs.git",
         "path" : "/var/www/bidyanda/html/bidyanda",
         "post-deploy" : "pm2 startOrRestart ecosystem.json --env production"
       },

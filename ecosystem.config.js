@@ -23,7 +23,7 @@ module.exports = {
     production: {
       user: "root",
       host: ["143.110.240.100"],
-      ref: "origin/prod",
+      ref: "origin/master",
       repo: "https://github.com/Bidyanda/bidyanda-nestjs.git",
       path: "/var/www/bidyanda/html/bidyanda",
       "post-setup": "npm install",

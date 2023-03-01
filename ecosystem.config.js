@@ -20,7 +20,7 @@ module.exports = {
       repo: "git@github.com:username/my-nest-app.git",
       path: "/var/www/bidyanda/html/bidyanda",
       "post-deploy":
-        "npm install && npm run build && pm2 startOrRestart ecosystem.config.js --env production",
+        "pm2 startOrRestart ecosystem.config.js --env production",
     },
   },
 };

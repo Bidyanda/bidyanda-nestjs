@@ -1,9 +1,3 @@
-// module.exports = {
-//   apps : [{
-//     name   : "bidyanda",
-//     script : "dist/main.js"
-//   }]
-// }
 module.exports = {
   apps: [
     // First application
@@ -15,7 +9,7 @@ module.exports = {
       error_file: 'err.log',
       out_file: 'bidyanda.log',
       merge_logs: false,
-      env: {
+      env_development: {
         NODE_ENV: 'development',
         PORT:3000
       },

@@ -9,7 +9,7 @@ module.exports = {
     // First application
     {
       name: 'bidyanda',
-      script: 'exescript.sh',
+      script: 'dist/main.js',
       instances: 'max',
       exec_mode: 'cluster',
       error_file: 'err.log',

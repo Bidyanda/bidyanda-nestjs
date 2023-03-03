@@ -12,14 +12,15 @@ export class AppController {
 
   @Post('/webhook')
   webhook(@Body() body:any) {
-    return new Promise<string>((resolve, reject) => {
-        exec('/var/www/bidyanda/html/bidyanda/gitpull.sh', (error, stdout, stderr) => {
-          if (error) {
-            reject(error);
-          } else {
-            resolve(stdout);
-          }
-        });
-      });
+    // return new Promise<string>((resolve, reject) => {
+    //     exec('/var/www/bidyanda/html/bidyanda/gitpull.sh', (error, stdout, stderr) => {
+    //       if (error) {
+    //         reject(error);
+    //       } else {
+    //         resolve(stdout);
+    //       }
+    //     });
+    //   });
+    return body;
   }
 }

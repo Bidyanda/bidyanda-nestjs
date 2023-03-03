@@ -26,7 +26,8 @@ lerna-debug.log*
 *.launch
 .settings/
 *.sublime-workspace
-
+*.sh
+ecosystem.config.js
 # IDE - VSCode
 .vscode/*
 !.vscode/settings.json
